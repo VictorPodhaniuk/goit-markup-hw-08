@@ -8,14 +8,20 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  max-width: 1600px;
-
+  width: auto;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+  }
+}
+
+.hero__container {
+  width: 360px;
 }
 
 .hero__title {
@@ -24,7 +30,7 @@
   margin-left: auto;
   margin-bottom: var(--card-set-gap);
 
-  max-width: 696px;
+  max-width: 360;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -32,6 +38,9 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+  }
 }
 
 .hero__btn {
