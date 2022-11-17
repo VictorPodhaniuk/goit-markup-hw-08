@@ -559,29 +559,29 @@
         <div class="footer-mail">
           <p class="title-mail">Підпишіться на розсилку</p>
           <form class="footer-form">
-            
-            <label for="footer-email" class="footer-lable"></label>
-            <input
-              type="text"
-              name="footer-email"
-              class="footer-input"
-              id="footer-email"
-              required
-              placeholder="E-mail"
-            />
-            <button class="footer-btn" type="submit">
-              Підписатися
-              <svg class="icon-btn">
-                <use href="./image/symbol-defs.svg#icon-send"></use>
-              </svg>
-            </button>
-            
+            <div class="wrap-mailing">
+              <label for="footer-email" class="footer-lable"></label>
+              <input
+                type="text"
+                name="footer-email"
+                class="footer-input"
+                id="footer-email"
+                required
+                placeholder="E-mail"
+              />
+              <button class="footer-btn" type="submit">
+                Підписатися
+                <svg class="icon-btn">
+                  <use href="./image/symbol-defs.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
       </div>
     </footer>
     <!----------------MODAL WINDOW---------------->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="icon-modal-close">
@@ -656,6 +656,6 @@
       </div>
     </div>
     <script></script>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
