@@ -40,6 +40,12 @@
               <a href="#" class="menu__link link">Контакти</a>
             </li>
           </ul>
+          <button class="btn-menu is-open" type="button" >
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="icon-open-menu" href="./image/symbol-defs.svg#icon-menu" ></use>
+              <use class="icon-close-menu" href="./image/symbol-defs.svg#icon-close-menu"></use>
+            </svg>
+          </button>
         </nav>
         <!-------------------contacts header----------------------->
         <ul class="contacts header__contacts list">
@@ -558,8 +564,8 @@
         </div>
         <div class="footer-mail">
           <p class="title-mail">Підпишіться на розсилку</p>
-          <form class="footer-form">
-            <div class="wrap-mailing">
+          <div class="wrap-mailing">
+            <form class="footer-form">
               <label for="footer-email" class="footer-lable"></label>
               <input
                 type="text"
@@ -575,8 +581,8 @@
                   <use href="./image/symbol-defs.svg#icon-send"></use>
                 </svg>
               </button>
-            </div>
-          </form>
+            </form>
+          </div> 
         </div>
       </div>
     </footer>
@@ -655,7 +661,7 @@
         </form>
       </div>
     </div>
-    <script></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

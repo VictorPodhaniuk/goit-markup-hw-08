@@ -39,6 +39,29 @@
   color: var(--blue-color);
 }
 
+.btn-menu {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.btn-menu .icon-close {
+  display: none;
+}
+
+.btn-menu.is-open .icon-close-menu {
+  display: block;
+}
+
+.btn-menu.is-open .icon-open-menu {
+  display: none;
+}
+
 .menu {
   display: none;
   @media screen and (min-width: 768px) {
