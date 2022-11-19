@@ -25,10 +25,30 @@
     <!----------------------- HEADER ------------------------->
     <header class="header">
       <div class="container header__main">
+        <a class="logo navigation__logo" href="./index.html"
+          ><span class="logo__part">Web</span>Studio</a
+        >
+        <button
+          class="btn-menu is-open"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use
+              class="icon-close-menu"
+              href="./image/symbol-defs.svg#icon-close-menu"
+            ></use>
+            <use
+              class="icon-open-menu"
+              href="./image/symbol-defs.svg#icon-menu"
+            ></use>
+          </svg>
+
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>Контент</div>
         <nav class="navigation header__main">
-          <a class="logo navigation__logo" href="./index.html"
-            ><span class="logo__part">Web</span>Studio</a
-          >
           <ul class="menu list">
             <li class="menu__item">
               <a href="./index.html" class="menu__link current link">Студія</a>
@@ -40,12 +60,6 @@
               <a href="#" class="menu__link link">Контакти</a>
             </li>
           </ul>
-          <button class="btn-menu is-open" type="button" >
-            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-              <use class="icon-open-menu" href="./image/symbol-defs.svg#icon-menu" ></use>
-              <use class="icon-close-menu" href="./image/symbol-defs.svg#icon-close-menu"></use>
-            </svg>
-          </button>
         </nav>
         <!-------------------contacts header----------------------->
         <ul class="contacts header__contacts list">
@@ -67,6 +81,7 @@
           </li>
         </ul>
       </div>
+      <div class="mob-menu"></div>
     </header>
     <main>
       <!--section hero-->
@@ -143,6 +158,7 @@
             <li class="activities__item">
               <div class="activities__wrap">
                 <img
+                  srcset="./image/programer.jpg 1x, ./image/programer-2x.jpg 2x"
                   src="./image/programer.jpg"
                   alt="Програміст набирає код"
                   width="370"
@@ -179,10 +195,25 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                src="./image/igor.jpg"
-                alt="Чоловік у сорочці та окулярах"
-              />
+              <picture>
+                <source
+                  srcset="./image/igor.jpg 1x, ./image/igor-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./image/igor-tab.jpg 1x, ./image/igor-2x-tab.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./image/igor-mob.jpg 1x, ./image/igor-2x-mob.jpg 2x"
+                  media="(max-width: 480px)"
+                />
+                <img
+                  src="./image/igor.jpg"
+                  alt="Чоловік у сорочці та окулярах"
+                  width="450"
+                />
+              </picture>
               <div class="name-wrap">
                 <h3 class="name-wrap__title">Ігор Дем'яненко</h3>
                 <p class="name-wrap__position">Product Designer</p>
@@ -241,7 +272,26 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./image/olga.jpg" alt="Жінка в окулярах" />
+              <picture>
+                <source
+                  srcset="./image/olga.jpg 1x, ./image/olga-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./image/olga-tab.jpg 1x, ./image/olga-2x-tab.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./image/olga-mob.jpg 1x, ./image/olga-2x-mob.jpg 2x"
+                  media="(max-width: 480px)"
+                />
+                <img
+                  src="./image/olga.jpg"
+                  alt="Жінка в окулярах"
+                  width="450"
+                />
+              </picture>
+
               <div class="name-wrap">
                 <h3 class="name-wrap__title">Ольга Рєпіна</h3>
                 <p class="name-wrap__position">Frontend Developer</p>
@@ -300,10 +350,25 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./image/nick.jpg"
-                alt="Чоловік у світлій сорочці"
-              />
+              <picture>
+                <source
+                  srcset="./image/nick.jpg 1x, ./image/nick-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./image/nick-tab.jpg 1x, ./image/nick-2x-tab.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./image/nick-mob.jpg 1x, ./image/nick-2x-mob.jpg 2x"
+                  media="(max-width: 480px)"
+                />
+                <img
+                  src="./image/nick.jpg"
+                  alt="Чоловік у світлій сорочці"
+                  width="450"
+                />
+              </picture>
               <div class="name-wrap">
                 <h3 class="name-wrap__title">Микола Тарасов</h3>
                 <p class="name-wrap__position">Marketing</p>
@@ -362,10 +427,31 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./image/michael.jpg"
-                alt="Чоловік у футболці та окулярах"
-              />
+              <picture>
+                <source
+                  srcset="./image/michael.jpg 1x, ./image/michael-2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/michael-tab.jpg    1x,
+                    ./image/michael-2x-tab.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/michael-mob.jpg    1x,
+                    ./image/michael-2x-mob.jpg 2x
+                  "
+                  media="(max-width: 480px)"
+                />
+                <img
+                  src="./image/michael.jpg"
+                  alt="Чоловік у футболці та окулярах"
+                  width="450"
+                />
+              </picture>
               <div class="name-wrap">
                 <h3 class="name-wrap__title">Михайло Єрмаков</h3>
                 <p class="name-wrap__position">UI Designer</p>
@@ -582,7 +668,7 @@
                 </svg>
               </button>
             </form>
-          </div> 
+          </div>
         </div>
       </div>
     </footer>
