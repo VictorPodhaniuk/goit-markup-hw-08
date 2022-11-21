@@ -1,6 +1,5 @@
 .header {
   border-bottom: 1px solid var(--border-header-color);
-  position: relative;
 }
 
 .menu .menu__link.current {
@@ -69,24 +68,21 @@
   display: flex;
   flex-grow: 1;
   align-items: center;
-
   
   @media screen and (max-width: 767px) {
     display: none;
-    
     top: 0;
     left: 0;
     width: 100%;
-    height: 800px;
+    height: 100%;
     background-color: #fdfdfd;
     padding: 40px;
     text-align: left;
     &.is-open {
-      position: absolute;
+      position: fixed;
       align-items: start;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
       overflow: auto;
     }
   }
@@ -151,9 +147,13 @@
 }
 
 .menu-container__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-grow: 1;
+    margin-top: 0;
   }
   
 }
