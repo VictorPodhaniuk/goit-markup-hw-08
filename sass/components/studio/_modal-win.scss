@@ -59,15 +59,15 @@ px
   background-color: var(--white-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  &:focus,
+  &:hover {
+    fill: var(--blue-color);
+  }
 }
 
 .icon-modal-close {
   width: 18px;
   height: 18px;
-  &:focus,
-  &:hover {
-    fill: var(--blue-color);
-  }
 }
 
 

@@ -18,7 +18,10 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url("../image/hero-mobile-2x.jpg");
+        background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ), url("../image/hero-mobile-2x.jpg");
     }
   @media screen and (min-width: 480px) {
     background-image: linear-gradient(
@@ -36,7 +39,10 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url("../image/hero-tab-2x.jpg");
+        background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ), url("../image/hero-tab-2x.jpg");
       }
   }
   @media screen and (min-width: 1200px) {
@@ -52,7 +58,10 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url("../image/Img-2x.jpg");
+        background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ), url("../image/Img-2x.jpg");
       }
   }
 }
