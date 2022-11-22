@@ -39,17 +39,16 @@
 
 .specifics__subtitle {
   margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   @media screen and (min-width: 768px) {
-    justify-content: start;
+    text-align: left;
   }
   @media screen and (min-width: 1200px) {
-    justify-content: start;
+    text-align: left;
   }
 }
 

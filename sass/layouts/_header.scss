@@ -1,5 +1,6 @@
 .header {
   border-bottom: 1px solid var(--border-header-color);
+  background-color: var(--white-color);
 }
 
 .menu .menu__link.current {
@@ -9,7 +10,7 @@
 .header__main {
   display: flex;
   align-items: center;
-  
+  overflow: hidden;
 }
 
 .navigation__logo {
@@ -41,12 +42,12 @@
 }
 
 .btn-menu {
+  z-index: 2;
   display: flex;
   padding: 0;
   border: none;
   background-color: transparent;
   margin-left: auto;
-  z-index: 1;
   &:hover,
   &:focus {
     fill: var(--blue-color);
@@ -62,18 +63,21 @@
 
 .btn-menu.is-open .icon-open-menu {
   display: block;
-  
 }
 
 .btn-menu.is-open .icon-close-menu {
   display: none;
 }
 
+.icon-close-menu {
+  position: fixed;
+}
 
 .menu-container {
   display: flex;
   flex-grow: 1;
   align-items: center;
+  z-index: 1;
   
   @media screen and (max-width: 767px) {
     display: none;
@@ -89,7 +93,6 @@
       align-items: start;
       display: flex;
       flex-direction: column;
-      overflow: auto;
     }
   }
 }
@@ -201,13 +204,42 @@
     }
   }
 }
+.contacts__link__tel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 34px;
+    line-height: 1.18;
+    letter-spacing: .02em;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+    background-size: contain;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 767px){
+    color: var(--blue-color);
+  }
+    
+  @media screen and (min-width: 768px) {
+    display: flexbox;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+  }
+  @media screen and (min-width: 1200px) {
+    
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
 
-.contacts__link {
+.contacts__link__mail {
   display: flex;
   align-items: center;
-  
   gap: 10px;
-
   text-decoration: none;
   font-weight: 500;
   font-size: 24px;
@@ -216,16 +248,7 @@
   color: var(--secondary-text-color);
   background-size: contain;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: var(--blue-color);
-    @media screen and (max-width: 767px) {
-      font-size: 34px;
-      line-height: 1.18;
-      letter-spacing: .02em;
-      font-weight: 500;
-    }
-  }
+
   @media screen and (min-width: 768px) {
     display: flexbox;
     align-items: center;
