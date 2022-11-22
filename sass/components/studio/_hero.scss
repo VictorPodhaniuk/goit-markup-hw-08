@@ -15,7 +15,9 @@
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-    
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+}
   @media screen and (min-width: 480px) {
     background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -66,7 +68,11 @@
       }
   }
 }
-
+// .hero__container {
+// @media screen and (max-width: 767px) {
+//   margin-top: 60px;
+// }
+// }
 
 .hero__title {
   flex-wrap: wrap;

@@ -86,7 +86,14 @@ body {
 
 .header {
   border-bottom: 1px solid var(--border-header-color);
-  background-color: var(--white-color);
+}
+@media screen and (max-width: 767px) {
+  .header {
+    position: fixed;
+    background-color: var(--white-color);
+    width: 100%;
+    margin-top: -60px;
+  }
 }
 
 .menu .menu__link.current {
@@ -715,6 +722,11 @@ body {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .hero__section {
+    margin-top: 60px;
+  }
 }
 @media screen and (min-width: 480px) {
   .hero__section {
@@ -1364,6 +1376,11 @@ body {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .section {
+    margin-top: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .section {
