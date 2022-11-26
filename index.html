@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!----------------------- HEADER ------------------------->
+    <!-- --------------------- HEADER ----------------------- -->
     <header class="header">
       <div class="container header__main">
         <a class="logo navigation__logo" href="./index.html"
@@ -60,7 +60,7 @@
               </li>
             </ul>
           </nav>
-          <!-------------------contacts header----------------------->
+          <!-----------contacts header------------------------->
           <div class="menu-container__contacts">
             <ul class="contacts header__contacts list">
               <li class="contacts__item">
@@ -585,7 +585,7 @@
     <!--contacts footer-->
     <footer class="footer">
       <div class="footer-wrap container">
-        <div class="wrap-contacts">
+        <div class="footer-wrap__block">
           <div class="footer-contacts">
             <a class="footer-logo" href="./index.html">
               <span class="footer-part-logo">Web</span>Studio</a
@@ -669,15 +669,15 @@
           </div>
         </div>
         <div class="footer-mail">
-          <p class="title-mail">Підпишіться на розсилку</p>
-          <div class="wrap-mailing">
-            <form class="footer-form">
-              <label for="footer-email" class="footer-lable"></label>
+          <form class="footer-form">
+            <p class="title-mail">Підпишіться на розсилку</p>
+            <div class="mail-wrap">
+              <label for="user-email" class="footer-lable"></label>
               <input
                 type="text"
-                name="footer-email"
+                name="user-email"
                 class="footer-input"
-                id="footer-email"
+                id="user-email"
                 required
                 placeholder="E-mail"
               />
@@ -687,8 +687,8 @@
                   <use href="./image/symbol-defs.svg#icon-send"></use>
                 </svg>
               </button>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
