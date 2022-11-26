@@ -2,45 +2,34 @@
   background-color: var(--secondary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  // @media screen and (min-width: 768px) {
-  //   height: 463px;
-  // }
-  // @media screen and (min-width: 1200px) {
-  //   height: 252px;
-  // }
 }
 
 .footer-wrap {
-  // display: flex;
-  // align-items: baseline;
   display: block;
-  
+  text-align: center;
   @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: baseline;
   }
 }
 
-.wrap-contacts {
+.footer-wrap__block {
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
     margin-bottom: 0;
   }
 }
 
 .footer-contacts {
-  display: block;
   margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
+    text-align: left;
     margin-right: 70px;
   }
 }
@@ -68,14 +57,10 @@
 }
 
 .footer-address {
-// display: flex;
-// justify-content: center;
 text-align: center;
   @media screen and (min-width: 1200px) {
-    // display: block;
-    text-align: left;
-    margin-top: 20px;
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -115,11 +100,7 @@ text-align: center;
 }
 
 .footer-social {
-  margin-right: 0;
-  @media screen and (min-width: 768px) {
-    justify-content: space-between;
-    margin-bottom: 0;
-  }
+
   @media screen and (min-width: 1200px) {
     margin-right: 93px;
   }
@@ -175,6 +156,8 @@ text-align: center;
   height: 20px;
 }
 
+
+
 .title-mail {
   text-align: center;
   margin-bottom: 20px;
@@ -190,16 +173,16 @@ text-align: center;
 }
 
 
-.wrap-mailing {
-  display: block;
-  align-items: center;
-  text-align: center;
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-}
+// .wrap-mailing {
+//   display: block;
+//   align-items: center;
+//   text-align: center;
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     align-items: center;
+//     text-align: center;
+//   }
+// }
 
 .footer-input {
   width: 100%;
