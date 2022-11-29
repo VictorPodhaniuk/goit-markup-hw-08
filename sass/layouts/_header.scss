@@ -278,6 +278,7 @@
 .menu-soc {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: left;
   margin-top: 64px;
