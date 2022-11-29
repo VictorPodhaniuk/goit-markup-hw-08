@@ -399,6 +399,12 @@ body {
   color: var(--blue-color);
 }
 
+@media screen and (max-width: 439px) {
+  .menu-soc__item {
+    margin-bottom: 30px;
+  }
+}
+
 .menu-soc__item:not(:last-child) {
   margin-right: 10px;
   padding-right: 10px;
